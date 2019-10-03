@@ -1,0 +1,1 @@
+CREATE DATABASE apple_test CHARACTER SET utf8 COLLATE utf8_unicode_ci;
