@@ -5,6 +5,7 @@ namespace backend\controllers;
 
 
 use yii\filters\AccessControl;
+use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 
 abstract class BaseController extends Controller

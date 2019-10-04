@@ -37,14 +37,20 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
+            'showScriptName' => false
         ],
-        */
+        'request' => [
+            'baseUrl' => '/admin',
+            'enableCsrfCookie' => true,
+            'enableCookieValidation' => true,
+            'csrfCookie' => [
+                'httpOnly' => true,
+                'path'     => '/admin'
+            ]
+        ],
     ],
     'params' => $params,
+    'homeUrl' => '/admin',
 ];
